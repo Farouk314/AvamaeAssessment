@@ -14,7 +14,7 @@ class App extends Component {
           <Divider />
           <div className="footer">
             Footer
-        </div>
+          </div>
         </div>
       </div>
     );

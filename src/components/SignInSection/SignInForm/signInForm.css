@@ -4,3 +4,27 @@
     margin-top: 1em;
     height: auto;
 }
+
+.form-divider {
+    background-color: rgb(0,174,239);
+    border: none;
+    height: 1px;
+    margin: 0;
+}
+
+button:focus {outline:0;}
+
+.step-button {
+    background-color: rgb(241, 241, 241);
+    border-style: solid;
+    border-width: 1px;
+    border-color: rgb(204,204,204);
+    border-top-right-radius: 10%;
+    border-top-left-radius: 10%;
+    border-bottom-style: none;
+    width: 20vw;
+    height: 6vh;
+    margin-right: 2vw;
+}
+
+/* rgb(193, 234, 250); -- Button inside colour when ACTIVE */
