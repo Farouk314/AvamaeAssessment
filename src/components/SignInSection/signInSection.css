@@ -1,0 +1,20 @@
+/* .sign-in-container {
+    float: centre;
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    justify-content: left;
+} */
+
+@media only screen and (max-width: 600px) {
+    body {
+      background-color: lightblue;
+    }
+
+    .sign-in-section {
+        background-color: greenyellow;
+        flex-direction: column;
+    }
+  }
