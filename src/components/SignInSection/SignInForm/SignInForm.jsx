@@ -22,31 +22,35 @@ class SignInForm extends React.Component {
 
     render() {
         return (
-            <div className='form-container'>
-                <div className="form-tabs">
+            <div className="form-container">
+                <div>
                     <button onClick={() => this.onSetTab(0)} className="step-button" type="button">Step 1</button>
                     <button onClick={() => this.onSetTab(1)} className="step-button" type="button">Step 2</button>
                     <hr className="form-divider" />
                 </div>
 
                 {this.state.tab === 0 &&
-                    <>
-                        <h4>First name</h4>
-                        <input type="text" />
-                        <h4>Last name</h4>
-                        <input type="text" />
-                        <button type="submit" onClick={this.onNextTab}>Next</button>
-                    </>
+                    <div>
+                        <h4 className="form-header">First name</h4>
+                        <input type="text" className="input-box" />
+                        <h4 className="form-header">Last name</h4>
+                        <input type="text" className="input-box" />
+                        <div className="form-button-container">
+                            <button type="submit" onClick={this.onNextTab} className="form-button">Next</button>
+                        </div>
+                    </div>
                 }
 
                 {this.state.tab === 1 &&
-                    <>
-                        <h4>Email</h4>
-                        <input type="text" />
-                        <h4>Phone number</h4>
-                        <input type="text" />
-                        <button type="submit" onClick={this.onSubmitForm}>Submit</button>
-                    </>
+                    <div className="form-tab">
+                        <h4 className="form-header">Email</h4>
+                        <input type="text" className="input-box" />
+                        <h4 className="form-header">Phone number</h4>
+                        <input type="text" className="input-box" />
+                        <div className="form-button-container" >
+                            <button type="submit" onClick={this.onSubmitForm} className="form-button">Submit</button>
+                        </div>
+                    </div>
                 }
 
             </div>
