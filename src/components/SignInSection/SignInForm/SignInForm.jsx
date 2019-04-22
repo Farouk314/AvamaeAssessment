@@ -23,11 +23,11 @@ class SignInForm extends React.Component {
     render() {
         return (
             <div className="form-container">
-                <div>
+                <div className="step-button-container">
                     <button onClick={() => this.onSetTab(0)} className="step-button" type="button">Step 1</button>
                     <button onClick={() => this.onSetTab(1)} className="step-button" type="button">Step 2</button>
-                    <hr className="form-divider" />
                 </div>
+                <hr className="form-divider" />
 
                 {this.state.tab === 0 &&
                     <div>
@@ -42,7 +42,7 @@ class SignInForm extends React.Component {
                 }
 
                 {this.state.tab === 1 &&
-                    <div className="form-tab">
+                    <div>
                         <h4 className="form-header">Email</h4>
                         <input type="text" className="input-box" />
                         <h4 className="form-header">Phone number</h4>

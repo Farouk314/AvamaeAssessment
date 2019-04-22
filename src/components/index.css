@@ -8,3 +8,53 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+@media only screen and (min-width: 700px) {
+    .sign-in-container {
+      flex-direction: row;
+      display: flex;
+    }
+
+    .form-divider {
+      margin-bottom: 2.2vw;
+    }
+
+    .input-box {
+      margin: 0.5vw 0;
+      margin-bottom: 1.5vw;
+    }
+
+    .form-container {
+      /*margin: top right bottom left */
+      margin: 0vw 0vw 0vw 2.5vw;
+      /* margin-top: 0;
+      margin-left: 1vw; */
+    }
+
+    .form-container {
+      width: 50%;
+    }
+
+    .form-button-container {
+      padding-top: 1.5vw;
+    }
+  
+    .form-button {
+      width: 8vw;
+      border-radius: 0.35em;
+    }
+
+    .image-container {
+      width: 50%;
+    }
+
+    .image-text {
+      font-size: 1.55em;
+      padding: 4vw 4vw;
+    }
+
+    .step-button {
+      width: 6.5vw;
+      height: 5.5vh;
+      margin-right: 0.8vw;
+    }
+}

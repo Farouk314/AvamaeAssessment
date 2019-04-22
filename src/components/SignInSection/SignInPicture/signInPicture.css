@@ -1,11 +1,12 @@
 .image-container {
     position: relative;
+    overflow: hidden;
 }
 
 .watermelon-image {
     width: 100%;
-    height: auto;
-    border-radius: 1%;
+    height: 100%;
+    border-radius: 0.35em;
 }
 
 .image-text {
@@ -18,6 +19,6 @@
     font: 3.5vw Sans-Serif;
     text-align: left;
     line-height: 1.5em;
-    overflow: hidden;
+    border-radius: 0em 0em 0.35em 0.35em;
     margin: auto;
 }

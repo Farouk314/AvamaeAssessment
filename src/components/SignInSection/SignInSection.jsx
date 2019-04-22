@@ -5,10 +5,10 @@ import './signInSection.css'
 
 const SignInSection = (props) => {
     return (
-        <React.Fragment>
+        <div className="sign-in-container">
             <SignInPicture />
             <SignInForm />
-        </React.Fragment>
+        </div>
     )
 }
 
