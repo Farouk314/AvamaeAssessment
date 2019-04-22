@@ -1,21 +1,12 @@
-/* .root-container {
-    background-color: red;
-    margin: 0 0vw;
-} */
+.root-container {
 
-/*@media only screen and (max-width: 320px) {
-    body {
-      background-color: lightblue;
-    }
+}
 
-    h2 {
-      padding: 0px 0px;
-    }
-
-    .media-q-test {
-        background-color: lightcoral;
-    }
-} */
+@media only screen and (min-width: 700px) {
+  .root-container {
+    padding: 0 15vw 0 15vw;
+  }
+}
 
 .divider {
   margin: 1.2em 0;

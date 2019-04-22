@@ -7,7 +7,6 @@ class App extends Component {
     const Divider = () => <hr className="divider" />;
     return (
       <div className="root-container">
-        <div className="media-q-test">
           <HeaderSection />
           <Divider />
           <SignInSection />
@@ -15,7 +14,6 @@ class App extends Component {
           <div className="footer">
             Footer
           </div>
-        </div>
       </div>
     );
   }

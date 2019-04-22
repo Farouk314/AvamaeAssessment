@@ -26,8 +26,6 @@ body {
     .form-container {
       /*margin: top right bottom left */
       margin: 0vw 0vw 0vw 2.5vw;
-      /* margin-top: 0;
-      margin-left: 1vw; */
     }
 
     .form-container {
@@ -48,8 +46,8 @@ body {
     }
 
     .image-text {
-      font-size: 1.55em;
-      padding: 4vw 4vw;
+      font-size: 1em;
+      padding: 2.2vw 2.1vw 3.6vw 2.1vw;
     }
 
     .step-button {
