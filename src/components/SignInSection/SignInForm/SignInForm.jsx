@@ -1,60 +1,83 @@
 import React from 'react';
-import './signInForm.css'
+import { BoundInput } from "../BoundInput";
+import './signInForm.css';
 
 class SignInForm extends React.Component {
 
     constructor(props) {
         super(props);
-        this.state = { tab: 0, activeTab: 0 };
+        this.state = { activeTab: 0, formDetails: { firstName: "", lastName: "", email: "", phoneNumber: "" } };
     }
 
     onNextTab = () => {
-        this.onSetTab(1);
+        this.onSetActiveTab(1);
     }
 
     onSubmitForm = () => {
-        alert("Alerts are bad!");
+        alert("firstName: " + this.state.formDetails.firstName + "\n" +
+            "lastName: " + this.state.formDetails.lastName + "\n" +
+            "email: " + this.state.formDetails.email + "\n" + 
+            "phoneNumber: " + this.state.formDetails.phoneNumber + "\n");
     }
 
-    onSetTab = (tab) => {
-        this.setState({ tab });
+    onSetActiveTab = (activeTab) => {
+        this.setState({ activeTab });
     }
 
     render() {
         return (
             <div className="form-container">
                 <div className="step-button-container">
-                    <button onClick={() => this.onSetTab(0)} className="step-button" type="button">Step 1</button>
-                    <button onClick={() => this.onSetTab(1)} className="step-button" type="button">Step 2</button>
+                    <button
+                        onClick={() => this.onSetActiveTab(0)}
+                        className={`step-button ${this.state.activeTab === 0 && "step-button-active"}`}
+                        type="button"
+                    >
+                        Step 1
+                    </button>
+                    <button
+                        onClick={() => this.onSetActiveTab(1)}
+                        className={`step-button ${this.state.activeTab === 1 && "step-button-active"}`}
+                        type="button"
+                    >
+                        Step 2
+                    </button>
                 </div>
                 <hr className="form-divider" />
 
-                {this.state.tab === 0 &&
+                {this.state.activeTab === 0 &&
                     <div>
                         <h4 className="form-header">First name</h4>
-                        <input type="text" className="input-box" />
+                        <BoundInput id="firstName" onInputChange={this.onInputChange} />
                         <h4 className="form-header">Last name</h4>
-                        <input type="text" className="input-box" />
+                        <BoundInput id="lastName" onInputChange={this.onInputChange} />
                         <div className="form-button-container">
                             <button type="submit" onClick={this.onNextTab} className="form-button">Next</button>
                         </div>
                     </div>
                 }
 
-                {this.state.tab === 1 &&
+                {this.state.activeTab === 1 &&
                     <div>
                         <h4 className="form-header">Email</h4>
-                        <input type="text" className="input-box" />
+                        <BoundInput id="email" onInputChange={this.onInputChange} />
                         <h4 className="form-header">Phone number</h4>
-                        <input type="text" className="input-box" />
                         <div className="form-button-container" >
-                            <button type="submit" onClick={this.onSubmitForm} className="form-button">Submit</button>
+                        <BoundInput id="phoneNumber" onInputChange={this.onInputChange} />
+                            <button type="submit" onClick={this.onSubmitForm} className="form-button">Next</button>
                         </div>
                     </div>
                 }
 
             </div>
         );
+    }
+
+    onInputChange = e => {
+        e.persist();
+        this.setState((prevState) => ({
+            formDetails: { ...prevState.formDetails, [e.target.id]: e.target.value } 
+         }));
     }
 
 };

@@ -7,8 +7,6 @@ import icecream from '../../../assets/icecream.jpg'
 import oranges from '../../../assets/oranges.jpg'
 import strawberries from '../../../assets/strawberries.jpg'
 import kiwi from '../../../assets/kiwi.jpg'
-import CustomButton from './CustomButton'
-
 
 class Carousel extends React.Component {
   render() {

@@ -22,15 +22,15 @@
 .form-button {
     border: none;
     background-color: rgb(49,151,87);
-    width: 25vw;
-    height: 6vh;
+    padding: 0.8em 2.65em;
     border-radius: 0.35em;
     color: white;
-    font-size: 0.9em;
+    font-size: 0.75em;
 }
 
 .form-header {
     font-weight: normal;
+    font-size: 0.85em;
     margin: auto;
 }
 
@@ -46,9 +46,13 @@
     border-top-right-radius: 0.35em;
     border-top-left-radius: 0.35em;
     border-bottom-style: none;
-    width: 15vw;
     height: 6vh;
     margin-right: 3vw;
+}
+
+.step-button-active {
+    background-color: rgb(193, 234, 250);
+    border-color: rgb(0,174,239);
 }
 
 .input-box {
@@ -60,10 +64,7 @@
     height: 6vh;
     width: 100%;
     margin: 2vw 0;
+    box-sizing: border-box;
 }
 
 button:focus {outline:0;}
-
-input{box-sizing:border-box}
-
-/* rgb(193, 234, 250); -- Button inside colour when ACTIVE */
