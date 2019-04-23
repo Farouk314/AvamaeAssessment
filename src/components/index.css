@@ -7,7 +7,7 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-@media only screen and (min-width: 700px) {
+@media only screen and (min-width: 701px) {
     .user-container {
       flex-direction: row;
       display: flex;
@@ -45,13 +45,18 @@ body {
     }
 
     .image-text {
-      font-size: 1em;
+      font-size: 0.7em;
       padding: 2.2vw 2.1vw 3.6vw 2.1vw;
     }
 
     .step-button {
-      width: 6.5vw;
-      height: 5.5vh;
+      padding: 1em 1em;
       margin-right: 0.8vw;
     }
+}
+
+@media only screen and (min-width: 1001px) {
+  .image-text {
+    font-size: 0.9em;
+  }
 }
