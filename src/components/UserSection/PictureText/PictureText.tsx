@@ -2,7 +2,7 @@ import React from 'react';
 import './pictureText.css'
 import watermelon from '../../../assets/watermelon.jpg'
 
-const PictureText = (props) => {
+const PictureText = () => {
     return (
         <div className='image-container'>
             <img src={watermelon} alt="watermelon" className="watermelon-image" />

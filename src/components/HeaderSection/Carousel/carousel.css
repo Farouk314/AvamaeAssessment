@@ -8,17 +8,32 @@
   border-radius: 1%;
 }
 
-.swiper-custom-prev {
+.swiper-custom {
   background-color: rgba(0, 0, 0, 0.7);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 50%;
   position: absolute;
-  z-index: 1;
-  margin-top: -22px;
   top: 50%;
-  left: -20px;
-  width: 50px;
+  z-index: 1;
+  width: 28px;
   height: 50px;
   color: white;
   border: none;
+}
+
+.swiper-custom-next {
+  background-image: url('../../../assets/right.png');
+  border-top-right-radius: 0.2em;
+  border-bottom-right-radius: 0.2em;
+  margin-top: -22px;
+  right: 0;
+}
+
+.swiper-custom-prev {
+  background-image: url('../../../assets/left.png');
   border-top-left-radius: 0.2em;
   border-bottom-left-radius: 0.2em;
+  margin-top: -22px;
+  left: 0;
 }

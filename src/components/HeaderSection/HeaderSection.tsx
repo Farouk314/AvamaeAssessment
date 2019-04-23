@@ -2,7 +2,7 @@ import React from 'react';
 import Carousel from './Carousel/Carousel';
 import './headerSection.css'
 
-const HeaderSection = (props) => {
+const HeaderSection = () => {
     return (
         <div className="carousel-box">
             <h1 className="header-text">Title</h1>

@@ -9,20 +9,21 @@ import strawberries from '../../../assets/strawberries.jpg'
 import kiwi from '../../../assets/kiwi.jpg'
 
 class Carousel extends React.Component {
-  render() {
+  public render() {
     const params = {
       modules: [Navigation],
       navigation: {
-        nextEl: '.swiper-button-next',
-        prevEl: '.swiper-button-prev',
+        nextEl: '.swiper-custom-next',
+        prevEl: '.swiper-custom-prev',
       },
-      // renderNextButton: () => <button className="swiper-button-next" />,
-      // renderPrevButton: () => <button className="swiper-button-prev" />,
-      loop: true,
+      renderNextButton: () => <button className="swiper-custom swiper-custom-next" />,
+      renderPrevButton: () => <button className="swiper-custom swiper-custom-prev" />,
+      loop: false,
+      loopedSlides: 0,
       slidesPerView: 3,
       spaceBetween: 30,
       breakpoints: {
-        700: {
+        768: {
           slidesPerView: 1
         }
       },

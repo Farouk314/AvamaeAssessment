@@ -3,7 +3,7 @@ import PictureText from './PictureText/PictureText';
 import UserDetailsForm from './UserDetailsForm/UserDetailsForm'
 import './userSection.css'
 
-const UserSection = (props) => {
+const UserSection = () => {
     return (
         <div className="user-container">
             <PictureText />

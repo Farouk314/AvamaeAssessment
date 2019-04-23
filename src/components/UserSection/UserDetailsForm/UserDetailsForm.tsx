@@ -2,29 +2,31 @@ import React from 'react';
 import { BoundInput } from "../BoundInput";
 import './userDetailsForm.css';
 
-class UserDetailsForm extends React.Component {
+interface State {
+    activeTab: number;
+    formDetails: { firstName: string, lastName: string, email: string, phoneNumber: string };
+}
 
-    constructor(props) {
-        super(props);
-        this.state = { activeTab: 0, formDetails: { firstName: "", lastName: "", email: "", phoneNumber: "" } };
-    }
+class UserDetailsForm extends React.Component<object, State> {
 
-    onNextTab = () => {
+    public state = { activeTab: 0, formDetails: { firstName: "", lastName: "", email: "", phoneNumber: "" } };
+
+    private onNextTab = () => {
         this.onSetActiveTab(1);
     }
 
-    onSubmitForm = () => {
+    private onSubmitForm = () => {
         alert("firstName: " + this.state.formDetails.firstName + "\n" +
             "lastName: " + this.state.formDetails.lastName + "\n" +
             "email: " + this.state.formDetails.email + "\n" + 
             "phoneNumber: " + this.state.formDetails.phoneNumber + "\n");
     }
 
-    onSetActiveTab = (activeTab) => {
+    private onSetActiveTab = (activeTab: number) => {
         this.setState({ activeTab });
     }
 
-    render() {
+    public render() {
         return (
             <div className="form-container">
                 <div className="step-button-container">
@@ -73,10 +75,10 @@ class UserDetailsForm extends React.Component {
         );
     }
 
-    onInputChange = e => {
+    onInputChange = (e: React.ChangeEvent<HTMLInputElement>) => {
         e.persist();
         this.setState((prevState) => ({
-            formDetails: { ...prevState.formDetails, [e.target.id]: e.target.value } 
+            formDetails: { ...prevState.formDetails, [e.currentTarget.id]: e.currentTarget.value } 
          }));
     }
 
