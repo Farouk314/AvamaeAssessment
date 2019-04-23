@@ -1,8 +1,8 @@
 import React from 'react';
 import { BoundInput } from "../BoundInput";
-import './signInForm.css';
+import './userDetailsForm.css';
 
-class SignInForm extends React.Component {
+class UserDetailsForm extends React.Component {
 
     constructor(props) {
         super(props);
@@ -62,8 +62,8 @@ class SignInForm extends React.Component {
                         <h4 className="form-header">Email</h4>
                         <BoundInput id="email" onInputChange={this.onInputChange} />
                         <h4 className="form-header">Phone number</h4>
-                        <div className="form-button-container" >
                         <BoundInput id="phoneNumber" onInputChange={this.onInputChange} />
+                        <div className="form-button-container" >
                             <button type="submit" onClick={this.onSubmitForm} className="form-button">Next</button>
                         </div>
                     </div>
@@ -82,4 +82,4 @@ class SignInForm extends React.Component {
 
 };
 
-export default SignInForm;
+export default UserDetailsForm;

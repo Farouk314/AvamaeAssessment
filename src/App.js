@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { HeaderSection, SignInSection } from './components'
+import { HeaderSection, UserSection } from './components'
 import './app.css'
 
 class App extends Component {
@@ -9,7 +9,7 @@ class App extends Component {
       <div className="root-container">
           <HeaderSection />
           <Divider />
-          <SignInSection />
+          <UserSection />
           <Divider />
           <div className="footer">
             Footer

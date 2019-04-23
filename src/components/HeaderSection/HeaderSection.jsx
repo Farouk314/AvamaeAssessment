@@ -4,10 +4,10 @@ import './headerSection.css'
 
 const HeaderSection = (props) => {
     return (
-        <React.Fragment>
+        <div className="carousel-box">
             <h1 className="header-text">Title</h1>
             <Carousel />
-        </React.Fragment>
+        </div>
     )
 };
 

@@ -1,22 +1,24 @@
-/* .swiper-container {
+.carousel-container {
   width: 100%;
   height: auto;
-} */
-
-.carousel-container {
-  padding: 0vw 0vw;
+  /* background-color: red; */
 }
 
 .swiper-slide {
   border-radius: 1%;
 }
 
-.custom-button {
-  width: 27px;
-  height: 44px;
-  background-color: white;
-}
-
-.swiper-button-prev {
-  border:none;
+.swiper-custom-prev {
+  background-color: rgba(0, 0, 0, 0.7);
+  position: absolute;
+  z-index: 1;
+  margin-top: -22px;
+  top: 50%;
+  left: -20px;
+  width: 50px;
+  height: 50px;
+  color: white;
+  border: none;
+  border-top-left-radius: 0.2em;
+  border-bottom-left-radius: 0.2em;
 }

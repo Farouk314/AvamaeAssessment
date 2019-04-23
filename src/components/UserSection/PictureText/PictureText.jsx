@@ -1,8 +1,8 @@
 import React from 'react';
-import './signInPicture.css'
+import './pictureText.css'
 import watermelon from '../../../assets/watermelon.jpg'
 
-const SignInPicture = (props) => {
+const PictureText = (props) => {
     return (
         <div className='image-container'>
             <img src={watermelon} alt="watermelon" className="watermelon-image" />
@@ -16,4 +16,4 @@ const SignInPicture = (props) => {
     )
 };
 
-export default SignInPicture;
+export default PictureText;

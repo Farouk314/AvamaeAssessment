@@ -11,15 +11,13 @@ import kiwi from '../../../assets/kiwi.jpg'
 class Carousel extends React.Component {
   render() {
     const params = {
-      ContainerEl: 'section',
-      WrapperEl: 'section',
       modules: [Navigation],
       navigation: {
         nextEl: '.swiper-button-next',
         prevEl: '.swiper-button-prev',
       },
-      renderPrevButton: () => <button className="swiper-button-prev">Prev</button>,
-      renderNextButton: () => <button className="swiper-button-next">Next</button>,
+      // renderNextButton: () => <button className="swiper-button-next" />,
+      // renderPrevButton: () => <button className="swiper-button-prev" />,
       loop: true,
       slidesPerView: 3,
       spaceBetween: 30,
@@ -33,10 +31,10 @@ class Carousel extends React.Component {
     return (
       <div className="carousel-container">
         <Swiper {...params}>
-          <img alt="img" src={icecream} />
-          <img alt="img" src={oranges} />
-          <img alt="img" src={strawberries} />
-          <img alt="img" src={kiwi} />
+          <img alt="icecream" src={icecream} />
+          <img alt="oranges" src={oranges} />
+          <img alt="strawberries" src={strawberries} />
+          <img alt="kiwi" src={kiwi} />
         </Swiper>
       </div>
     );

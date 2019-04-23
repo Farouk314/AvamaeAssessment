@@ -1,6 +1,12 @@
 .header-text {
     text-align: left;
-    justify-content: left;
     font-size: 1.75em;
     font-weight: normal;
+    padding-top: 0.8em;
+    margin-block-start: 0em;
+    margin-block-end: 0.6em;
+}
+
+.carousel-box {
+    border-radius: 0.2em;
 }
