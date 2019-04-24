@@ -1,7 +1,6 @@
 .root-container {
   background: rgb(229,229,229);
   border-radius: 0.2em;
-  /* background: yellow; */
 }
 
 @media only screen and (min-width: 700px) {

@@ -67,4 +67,25 @@
     box-sizing: border-box;
 }
 
+@media only screen and (min-width: 768px) {
+    .form-divider {
+      margin-bottom: 2.2vw;
+    }
+
+    .input-box {
+      margin: 0.5vw 0;
+      margin-bottom: 1.5vw;
+    }
+
+    .form-container {
+      /*margin: top right bottom left */
+      margin: 0vw 0vw 0vw 2.5vw;
+      width: 50%;
+    }
+
+    .form-button-container {
+      padding-top: 1.5vw;
+    }
+}
+
 button:focus {outline:0;}
