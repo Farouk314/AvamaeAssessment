@@ -18,8 +18,7 @@ class Carousel extends React.Component {
       },
       renderNextButton: () => <button className="swiper-custom swiper-custom-next" />,
       renderPrevButton: () => <button className="swiper-custom swiper-custom-prev" />,
-      loop: false,
-      loopedSlides: 0,
+      loop: true,
       slidesPerView: 3,
       spaceBetween: 30,
       breakpoints: {

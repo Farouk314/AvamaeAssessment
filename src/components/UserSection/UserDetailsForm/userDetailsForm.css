@@ -46,8 +46,8 @@
     border-top-right-radius: 0.35em;
     border-top-left-radius: 0.35em;
     border-bottom-style: none;
-    margin-right: 3vw;
-    padding: 1em 1em;
+    margin-right: 1em;
+    padding: 0.9em 2em;
 }
 
 .step-button-active {

@@ -16,10 +16,10 @@ class UserDetailsForm extends React.Component<object, State> {
     }
 
     private onSubmitForm = () => {
-        alert("firstName: " + this.state.formDetails.firstName + "\n" +
-            "lastName: " + this.state.formDetails.lastName + "\n" +
-            "email: " + this.state.formDetails.email + "\n" + 
-            "phoneNumber: " + this.state.formDetails.phoneNumber + "\n");
+        alert("First Name: " + this.state.formDetails.firstName + "\n" +
+            "Last Name: " + this.state.formDetails.lastName + "\n" +
+            "Email: " + this.state.formDetails.email + "\n" + 
+            "Phone Number: " + this.state.formDetails.phoneNumber + "\n");
     }
 
     private onSetActiveTab = (activeTab: number) => {
@@ -76,9 +76,10 @@ class UserDetailsForm extends React.Component<object, State> {
     }
 
     onInputChange = (e: React.ChangeEvent<HTMLInputElement>) => {
-        e.persist();
+        const currentTargetId = e.currentTarget.id;
+        const currentTargetValue = e.currentTarget.value;
         this.setState((prevState) => ({
-            formDetails: { ...prevState.formDetails, [e.currentTarget.id]: e.currentTarget.value } 
+            formDetails: { ...prevState.formDetails, [currentTargetId]: currentTargetValue } 
          }));
     }
 
