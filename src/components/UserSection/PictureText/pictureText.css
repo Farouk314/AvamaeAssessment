@@ -1,12 +1,11 @@
 .image-container {
     position: relative;
-    overflow: hidden;
 }
 
 .watermelon-image {
     width: 100%;
     height: 100%;
-    border-radius: 0.35em;
+    border-radius: 0.2rem;
 }
 
 .image-text {
@@ -14,13 +13,19 @@
     bottom: 0;
     left: 0;
     background: rgba(0, 0, 0, 0.7);
-    padding: 2em 2em 4em 2em;
+    padding: 1.5rem 1rem 1.8rem 1rem;
     color: white;
-    font: 1em Sans-Serif;
+    font: 1rem Sans-Serif;
     text-align: left;
     line-height: 1.5em;
-    border-radius: 0em 0em 0.35em 0.35em;
+    border-radius: 0 0 0.2rem 0.2rem;
     margin: auto;
+}
+
+@media only screen and (max-width: 400px) {
+    .image-text {
+        font-size: 0.7rem;
+    }
 }
 
 @media only screen and (min-width: 768px) {
@@ -29,16 +34,6 @@
     }
     
     .image-text {
-      font-size: 0.7em;
+      font-size: 0.7rem;
     }
 }
-
-@media only screen and (min-width: 1001px) {
-    .image-container {
-        width: 50%;
-    }
-
-    .image-text {
-      font-size: 0.9em;
-    }
-  }

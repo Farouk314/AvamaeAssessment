@@ -15,6 +15,11 @@ class Carousel extends React.Component {
         prevEl: '.swiper-button-prev',
       },
       slidesPerView: 3,
+      breakpoints: {
+        768: {
+          slidesPerView: 1
+        }
+      },
       spaceBetween: 30,
       loop: true,
     });
@@ -22,16 +27,18 @@ class Carousel extends React.Component {
 
   render() {
     return (
-      <div className="swiper-container">
-        <div className="swiper-wrapper">
-          <img className="swiper-slide" src={icecream} alt="icecream" />
-          <img className="swiper-slide" src={oranges} alt="oranges" />
-          <img className="swiper-slide" src={strawberries} alt="strawberries" />
-          <img className="swiper-slide" src={kiwi} alt="kiwi" />
+      <div className="swiper-box">
+        <div className="swiper-container">
+          <div className="swiper-wrapper">
+            <img className="swiper-slide" src={icecream} alt="icecream" />
+            <img className="swiper-slide" src={oranges} alt="oranges" />
+            <img className="swiper-slide" src={strawberries} alt="strawberries" />
+            <img className="swiper-slide" src={kiwi} alt="kiwi" />
+          </div>
+          {/* Swiper nav buttons */}
+          <div className="swiper-button-next" />
+          <div className="swiper-button-prev" />
         </div>
-        {/* Swiper nav buttons */}
-        <div className="swiper-button-next" />
-        <div className="swiper-button-prev" />
       </div>
     );
   }

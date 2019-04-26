@@ -29,7 +29,7 @@ class UserDetailsForm extends React.Component<object, State> {
     public render() {
         return (
             <div className="form-container">
-                <div className="step-button-container">
+                <div>
                     <button
                         onClick={() => this.onSetActiveTab(0)}
                         className={`step-button ${this.state.activeTab === 0 && "step-button-active"}`}

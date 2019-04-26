@@ -1,9 +1,9 @@
 .form-container {
     background-color: rgb(245, 245, 245);
-    padding: 1.5em;
-    margin-top: 1em;
+    padding: 1rem;
+    margin-top: 1rem;
     height: auto;
-    border-radius: 0.35em;
+    border-radius: 0.2rem;
 }
 
 .form-divider {
@@ -11,31 +11,27 @@
     border: none;
     height: 1px;
     margin: 0;
-    margin-bottom: 7vw;
+    margin-bottom: 2rem;
 }
 
 .form-button-container {
-    padding-top: 4vw;
+    padding-top: 1rem;
     text-align: right;
 }
 
 .form-button {
     border: none;
     background-color: rgb(49,151,87);
-    padding: 0.8em 2.65em;
-    border-radius: 0.35em;
+    padding: 0.65rem 2.2rem;
+    border-radius: 0.2rem;
     color: white;
-    font-size: 0.75em;
+    font-size: 0.75rem;
 }
 
 .form-header {
     font-weight: normal;
-    font-size: 0.85em;
+    font-size: 0.85rem;
     margin: auto;
-}
-
-.step-button-container {
-    display: flex;
 }
 
 .step-button {
@@ -43,11 +39,12 @@
     border-style: solid;
     border-width: 1px;
     border-color: rgb(204,204,204);
-    border-top-right-radius: 0.35em;
-    border-top-left-radius: 0.35em;
+    border-top-right-radius: 0.2rem;
+    border-top-left-radius: 0.2rem;
     border-bottom-style: none;
-    margin-right: 1em;
-    padding: 0.9em 2em;
+    margin-right: 0.5rem;
+    padding: 0.55rem 1.3rem 0.55rem 1.3rem;
+    font-size: 0.7rem;
 }
 
 .step-button-active {
@@ -60,31 +57,31 @@
     border-style: solid;
     border-width: 1px;
     border-color: rgb(204,204,204);
-    border-radius: 0.35em;
-    padding: 1em 1em;
+    border-radius: 0.2rem;
+    padding: 0.5rem 0.5rem;
     width: 100%;
-    margin: 2vw 0;
+    margin: 0.5rem 0 1rem 0;
     box-sizing: border-box;
 }
 
 @media only screen and (min-width: 768px) {
     .form-divider {
-      margin-bottom: 2.2vw;
+      margin-bottom: 1.5rem;
     }
 
     .input-box {
-      margin: 0.5vw 0;
-      margin-bottom: 1.5vw;
+      margin: 0.4rem 0;
+      margin-bottom: 0.8rem;
     }
 
     .form-container {
       /*margin: top right bottom left */
-      margin: 0vw 0vw 0vw 2.5vw;
+      margin: 0 0 0 0.7rem;
       width: 50%;
     }
 
     .form-button-container {
-      padding-top: 1.5vw;
+      padding-top: 0.9rem;
     }
 }
 

@@ -4,7 +4,11 @@
 }
 
 .swiper-slide {
-  border-radius: 1%;
+  border-radius: 0.2rem;
+}
+
+.swiper-box {
+  /* width: 80rem; */
 }
 
 .swiper-custom {
