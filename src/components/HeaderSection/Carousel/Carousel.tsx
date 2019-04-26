@@ -1,41 +1,37 @@
 import React from 'react';
 import './carousel.css';
-import Swiper from 'react-id-swiper';
-import { Navigation } from 'swiper/dist/js/swiper.esm';
+import Swiper from "swiper";
 import '../../../../node_modules/swiper/dist/css/swiper.min.css';
-import icecream from '../../../assets/icecream.jpg'
-import oranges from '../../../assets/oranges.jpg'
-import strawberries from '../../../assets/strawberries.jpg'
-import kiwi from '../../../assets/kiwi.jpg'
+import icecream from '../../../assets/icecream.jpg';
+import oranges from '../../../assets/oranges.jpg';
+import strawberries from '../../../assets/strawberries.jpg';
+import kiwi from '../../../assets/kiwi.jpg';
 
 class Carousel extends React.Component {
-  public render() {
-    const params = {
-      modules: [Navigation],
+  componentDidMount() {
+    new Swiper('.swiper-container', {
       navigation: {
-        nextEl: '.swiper-custom-next',
-        prevEl: '.swiper-custom-prev',
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
       },
-      renderNextButton: () => <button className="swiper-custom swiper-custom-next" />,
-      renderPrevButton: () => <button className="swiper-custom swiper-custom-prev" />,
-      loop: true,
       slidesPerView: 3,
       spaceBetween: 30,
-      breakpoints: {
-        768: {
-          slidesPerView: 1
-        }
-      },
-    };
+      loop: true,
+    });
+  }
 
+  render() {
     return (
-      <div className="carousel-container">
-        <Swiper {...params}>
-          <img alt="icecream" src={icecream} />
-          <img alt="oranges" src={oranges} />
-          <img alt="strawberries" src={strawberries} />
-          <img alt="kiwi" src={kiwi} />
-        </Swiper>
+      <div className="swiper-container">
+        <div className="swiper-wrapper">
+          <img className="swiper-slide" src={icecream} alt="icecream" />
+          <img className="swiper-slide" src={oranges} alt="oranges" />
+          <img className="swiper-slide" src={strawberries} alt="strawberries" />
+          <img className="swiper-slide" src={kiwi} alt="kiwi" />
+        </div>
+        {/* Swiper nav buttons */}
+        <div className="swiper-button-next" />
+        <div className="swiper-button-prev" />
       </div>
     );
   }
