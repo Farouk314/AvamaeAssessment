@@ -1,3 +1,3 @@
 Testing
 
-![Alt text](./assets/watermelon.jpg?raw=true "Watermelon")
+![Site Screenshot](src/assets/siteSS.png?raw=true "Website screenshot")
