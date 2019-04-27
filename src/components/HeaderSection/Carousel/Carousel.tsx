@@ -35,10 +35,10 @@ class Carousel extends React.Component {
             <img className="swiper-slide" src={strawberries} alt="strawberries" />
             <img className="swiper-slide" src={kiwi} alt="kiwi" />
           </div>
-          {/* Swiper nav buttons */}
-          <div className="swiper-button-next" />
-          <div className="swiper-button-prev" />
         </div>
+        {/* Swiper nav buttons */}
+        <div className="swiper-button-next swiper-button-white swiper-custom swiper-custom-next" />
+        <div className="swiper-button-prev swiper-button-white swiper-custom swiper-custom-prev" />
       </div>
     );
   }
