@@ -1,3 +1,3 @@
 Testing
 
-![Alt text](./assets/siteSS.png?raw=true "Optional Title")
+![Alt text](./assets/watermelon.jpg?raw=true "Watermelon")
