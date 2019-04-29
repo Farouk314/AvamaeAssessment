@@ -15,20 +15,26 @@
     background: rgba(0, 0, 0, 0.7);
     padding: 1.5rem 1rem 1.8rem 1rem;
     color: white;
-    font: 1rem Sans-Serif;
+    font: 0.55rem Sans-Serif;
     text-align: left;
     line-height: 1.5em;
     border-radius: 0 0 0.2rem 0.2rem;
     margin: auto;
 }
 
-@media only screen and (max-width: 400px) {
+@media only screen and (min-width: 375px) {
     .image-text {
         font-size: 0.7rem;
     }
 }
 
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 568px) {
+    .image-text {
+        font-size: 0.8rem;
+    }
+}
+
+@media only screen and (min-width: 769px) {
     .image-container {
         width: 50%;
     }

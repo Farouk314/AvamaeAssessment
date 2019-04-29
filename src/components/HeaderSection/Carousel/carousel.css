@@ -1,3 +1,5 @@
+button:focus {outline:0 !important;}
+
 .carousel-container {
   width: 100%;
   height: auto;
@@ -15,7 +17,7 @@
   background-color: rgba(0, 0, 0, 0.6);
   background-size: 40% !important;
   margin-top: -2rem !important;
-  padding: 1.5rem 0.25rem;
+  padding: 1.5em 0.25rem;
 }
 
 .swiper-custom-next {
@@ -30,4 +32,16 @@
   border-bottom-left-radius: 0.2rem;
 }
 
-button:focus {outline:0 !important;}
+@media only screen and (max-width: 350px) {
+  .swiper-custom {
+    padding: 1.2em 0.12rem;
+  }
+
+  .swiper-custom-prev {
+    margin-left: -2.51rem;
+  }
+
+  .swiper-custom-next {
+    margin-right: -2.51rem;
+  }
+}
